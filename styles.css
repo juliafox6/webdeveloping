@@ -19,6 +19,7 @@
   
   .section {
     flex-direction: column;
+    width: 90% !important;
   }
 
   .line {
@@ -33,6 +34,19 @@
   .additional {
     min-width: 90%;
   }
+  
+  table, th, td {
+    padding: 0.1rem 0.1rem !important;
+  }
+
+  th {
+    font-size: 8px;
+  }
+
+  header {
+    font-size: 2rem !important;
+  }
+
 }
 
 * {
@@ -56,18 +70,15 @@ header {
   font-size: 3rem;
   font-family: 'Fira Sans', sans-serif;
   padding: 3rem 4rem 3rem 4rem;
-  display: -webkit-inline-flex; /* WebKit */
   display: inline-flex;
-  -webkit-align-items: baseline; /* WebKit */
   align-items: baseline;
-  -webkit-justify-content: center; /* WebKit */
   justify-content: center;
 }
 
 header img {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 0.5rem;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.5em;
 }
 
 /* навигация */
@@ -78,9 +89,7 @@ nav {
   letter-spacing: 0.15rem;
   padding-left: 1rem;
   flex-wrap: wrap;
-  display: -webkit-inline-flex; /* WebKit */
   display: inline-flex;
-  -webkit-justify-content: center; /* WebKit */
   justify-content: center;
   padding: 0.5rem 0 0.5rem 1rem;
   position: sticky;
@@ -104,9 +113,7 @@ nav a:hover {
 .footer {
   background-color: #cd4a4c;
   width: 100%;
-  display: -webkit-inline-flex; /* WebKit */
   display: inline-flex;
-  -webkit-justify-content: space-between; /* WebKit */
   justify-content: space-between;
   padding: 0.5rem 1rem;
   position: relative;
@@ -121,11 +128,8 @@ nav a:hover {
 
 /* тело */
 main {
-  display: -webkit-flex; /* WebKit */
   display: flex;
-  -webkit-flex-direction: column; /* WebKit */
   flex-direction: column;
-  -webkit-align-items: center; /* WebKit */
   align-items: center;
   padding: 2rem 0;
 }
@@ -139,13 +143,9 @@ main {
   backdrop-filter: blur(10px);
   border-radius: 1rem;
   border: 0.1rem solid rgba(255, 255, 255, 0.4);
-  -webkit-align-items: center; /* WebKit */
   align-items: center;
-  display: -webkit-inline-flex; /* WebKit */
   display: inline-flex;
-  -webkit-flex-wrap: wrap; /* WebKit */
   flex-wrap: wrap;
-  -webkit-justify-content: center; /* WebKit */
   justify-content: center;
   z-index: 0;
 }
@@ -153,7 +153,6 @@ main {
 .section div {
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
   max-width: 45%;
-  -webkit-justify-content: center; /* WebKit */
   justify-content: center;
 }
 
@@ -187,7 +186,6 @@ main {
 }
 
 .center {
-  -webkit-flex-direction: column; /* WebKit */
   flex-direction: column;
   text-align: center;
   max-width: 90% !important;
@@ -206,11 +204,8 @@ main {
   padding: 0.5rem 1rem;
   backdrop-filter: blur(10px);
   border-radius: 0.5rem;
-  display: -webkit-inline-flex; /* WebKit */
   display: inline-flex;
-  -webkit-align-items: center; /* WebKit */
   align-items: center;
-  -webkit-justify-content: left !important; /* WebKit */
   justify-content: left !important;
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -234,7 +229,6 @@ a .card:hover {
 }
 
 .member, .boss {
-  -webkit-flex-direction: column; /* WebKit */
   flex-direction: column;
 }
 
