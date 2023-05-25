@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='en-EN'>
 
 <head>
 
@@ -20,12 +20,32 @@
   <nav>
       <a href='index.html' title='Главная'>Главная</a>
       <a href='about.html' title='О компании'>О компании</a>
-      <a href='portfolio.html' title='Портфолио'>Портфолио</a>
+      <div class='opener'>
+        <a href='portfolio.html' title='Портфолио'>Портфолио</a>
+        <div class='content'>
+          <a href='portfolio/case1.html' title='Кейс 1'>Кейс 1</a>
+          <a href='portfolio/case2.html' title='Кейс 2'>Кейс 2</a>
+          <a href='portfolio/case3.html' title='Кейс 3'>Кейс 3</a>
+          <a href='portfolio/case4.html' title='Кейс 4'>Кейс 4</a>
+        </div>
+      </div>
       <a href='vacancies.html' title='Вакансии'>Вакансии</a>
       <a href='contacts.html' title='Контакты'>Контакты</a>
   </nav>
 
   <main>
+    <div class='ad'>
+      <p class='close' onclick='hideAd()'>x</p>
+      <br>
+      <h3>Посетите наши курсы</h3>
+      <img src='src/ad.png' alt='Курсы'>
+      <p>Только сейчас они доступны совершенно бесплатно!</p>
+      <br>
+      <a href='https://skillbox.ru/' title='Курсы'><p class='button'>Посетить</p></a>
+    </div>
+    <div class='up up_hide'>
+      <p>^</p>
+    </div>
     <div class='section center'>
       <div class='center'>
         <br>
@@ -81,6 +101,7 @@
       <a>Карта сайта</a>
     </div>
   </div>
+  <script src='scripts.js'></script>
 </body>
 
 </html>

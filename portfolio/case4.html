@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='en-EN'>
 
 <head>
 
@@ -7,7 +7,7 @@
   <meta charset='UTF-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='../styles.css' rel='stylesheet'>
-  <link href='..src/icon.png' rel='icon' type='image/x-icon'>
+  <link href='../src/icon.png' rel='icon' type='image/x-icon'>
 
 </head>
 
@@ -20,12 +20,32 @@
   <nav>
       <a href='../index.html' title='Главная'>Главная</a>
       <a href='../about.html' title='О компании'>О компании</a>
-      <a href='../portfolio.html' title='Портфолио'>Портфолио</a>
+      <div class='opener'>
+        <a href='../portfolio.html' title='Портфолио'>Портфолио</a>
+        <div class='content'>
+          <a href='case1.html' title='Кейс 1'>Кейс 1</a>
+          <a href='case2.html' title='Кейс 2'>Кейс 2</a>
+          <a href='case3.html' title='Кейс 3'>Кейс 3</a>
+          <a href='case4.html' title='Кейс 4'>Кейс 4</a>
+        </div>
+      </div>
       <a href='../vacancies.html' title='Вакансии'>Вакансии</a>
       <a href='../contacts.html' title='Контакты'>Контакты</a>
   </nav>
 
   <main>
+    <div class='ad'>
+      <p class='close' onclick='hideAd()'>x</p>
+      <br>
+      <h3>Посетите наши курсы</h3>
+      <img src='../src/ad.png' alt='Курсы'>
+      <p>Только сейчас они доступны совершенно бесплатно!</p>
+      <br>
+      <a href='https://skillbox.ru/' title='Курсы'><p class='button'>Посетить</p></a>
+    </div>
+    <div class='up up_hide'>
+      <p>^</p>
+    </div>
     <div class='section'>
       <div style='text-align: center'>
         <img src='../src/portfolio_4.png' alt='Кейс 4'>
@@ -45,13 +65,13 @@
         <p>1. В первую очередь была разработана идея: онлайн-резюме для профессии, которую мы знаем лучше всего. Мы набросали цветовую гамму, эскизы, наполнение сайта и приступили к следующему шагу</p>
       </div>
       <div class='card'>
-        <p>2. Макет разрабатывался с помощью Figma. В его помощью мы создали оформление для двух страниц сайта: главной и портфолио. Это заняло приблизительно двое суток, поскольку требовало внимательности</p>
+        <p>2. Макет разрабатывался с помощью Figma. В его помощью мы создали оформление для двух страниц сайта: главной и портфолио. Это заняло двое суток, поскольку требовало внимательности</p>
       </div>
       <div class='card'>
         <p>3. Сделав в Figma работающие прототипы взаимодействия с сайтом, мы экспортировали некоторые графические элементы, созданные с помощью внутреннего векторного редактора Figma</p>
       </div>
       <div class='card'>
-        <p>4. Последним шагом мы "собрали" сайт с помощью zerocode-инструмента Tilda. Замеченные нами минусы: zerocode покрывает не весь функционал, к тому же, тяжелая верстка версии для телефонов</p>
+        <p>4. Последним шагом мы "собрали" сайт с помощью Tilda. Замеченные нами минусы: zerocode покрывает не весь функционал, к тому же, тяжелая верстка версии для телефонов</p>
       </div>
     </div>
     <h2 class='outer-header'>Дополнительные материалы</h2>
@@ -73,6 +93,7 @@
       <a href='../map.html' title='Карта сайта'>Карта сайта</a>
     </div>
   </div>
+  <script src='../scripts.js'></script>
 </body>
 
 </html>

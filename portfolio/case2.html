@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='en-EN'>
 
 <head>
 
@@ -7,7 +7,7 @@
   <meta charset='UTF-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='../styles.css' rel='stylesheet'>
-  <link href='..src/icon.png' rel='icon' type='image/x-icon'>
+  <link href='../src/icon.png' rel='icon' type='image/x-icon'>
 
 </head>
 
@@ -20,12 +20,32 @@
   <nav>
       <a href='../index.html' title='Главная'>Главная</a>
       <a href='../about.html' title='О компании'>О компании</a>
-      <a href='../portfolio.html' title='Портфолио'>Портфолио</a>
+      <div class='opener'>
+        <a href='../portfolio.html' title='Портфолио'>Портфолио</a>
+        <div class='content'>
+          <a href='case1.html' title='Кейс 1'>Кейс 1</a>
+          <a href='case2.html' title='Кейс 2'>Кейс 2</a>
+          <a href='case3.html' title='Кейс 3'>Кейс 3</a>
+          <a href='case4.html' title='Кейс 4'>Кейс 4</a>
+        </div>
+      </div>
       <a href='../vacancies.html' title='Вакансии'>Вакансии</a>
       <a href='../contacts.html' title='Контакты'>Контакты</a>
   </nav>
 
   <main>
+    <div class='ad'>
+      <p class='close' onclick='hideAd()'>x</p>
+      <br>
+      <h3>Посетите наши курсы</h3>
+      <img src='../src/ad.png' alt='Курсы'>
+      <p>Только сейчас они доступны совершенно бесплатно!</p>
+      <br>
+      <a href='https://skillbox.ru/' title='Курсы'><p class='button'>Посетить</p></a>
+    </div>
+    <div class='up up_hide'>
+      <p>^</p>
+    </div>
     <div class='section'>
       <div style='text-align: center'>
         <img src='../src/portfolio_2.png' alt='Кейс 2'>
@@ -68,13 +88,13 @@
         <p>1. Нашей первостепенной задачей стала разработка фирменного стиля, а именно - логотипа, что мы и сделали в первую очередь. Цвета были выбраны контрастные: оранжевый и голубой в стиле неон</p>
       </div>
       <div class='card'>
-        <p>2. Для страницы в социальной сети требовалось наполнение, поэтому мы разработали несколько баннеров и других вариаций логотипа для различных рубрик, чтобы их могли использовать впоследствии</p>
+        <p>2. Для страницы в социальной сети требовалось наполнение, поэтому мы разработали несколько баннеров и других вариаций логотипа, чтобы их могли использовать впоследствии</p>
       </div>
       <div class='card'>
         <p>3. Далее мы стали разрабатывать графические материалы для энциклопедии по миру, в том числе карты. Карты, представленные в "дополнительных материалах", нарисованы от руки</p>
       </div>
       <div class='card'>
-        <p>4. Впоследствии мы же помогали оформлять эту энциклопедию в рамках социальной сети, верстали ее оформление и параметры отображения наполнения, элементы дизайна, кнопки и иконки (в векторе)</p>
+        <p>4. Впоследствии мы же помогали оформлять эту энциклопедию в рамках социальной сети, верстали ее оформление и наполнение, элементы дизайна, кнопки и иконки (в векторе)</p>
       </div>
     </div>
     <h2 class='outer-header'>Дополнительные материалы</h2>
@@ -99,6 +119,7 @@
       <a href='../map.html' title='Карта сайта'>Карта сайта</a>
     </div>
   </div>
+  <script src='../scripts.js'></script>
 </body>
 
 </html>
