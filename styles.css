@@ -133,6 +133,14 @@ body {
   background-size: cover;
 }
 
+.wrapper {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow:hidden;
+}
+
 /* верхняя обложка */
 header {
   background: url('src/head_back.jpg') no-repeat;
@@ -328,8 +336,6 @@ nav a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.5rem 1rem;
-  position: relative;
-  bottom: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -356,6 +362,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem 0 0 0;
+  flex: 1 1 auto;
 }
 
 /* белый блок сверху */
