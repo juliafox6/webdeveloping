@@ -33,8 +33,10 @@ btnUp.addEventListener();
 const avoidFooter = {
   ad: document.querySelector('.ad'),
   main: document.querySelector('main'),
+  footer: document.querySelector('.footer'),
+  body: document.querySelector('body'),
   avoid() {
-    let mainAdPosition = this.main.getBoundingClientRect().bottom + window.scrollY - this.ad.getBoundingClientRect().height - 48;
+    let mainAdPosition = this.main.getBoundingClientRect().bottom + window.scrollY - this.ad.getBoundingClientRect().height;
     this.ad.style.position = 'absolute';
     this.ad.style.top = String(mainAdPosition) + 'px';
   },
@@ -45,12 +47,13 @@ const avoidFooter = {
   checkOffset() {
     window.addEventListener("scroll", () => {
       let adAbsPosition = this.ad.getBoundingClientRect().bottom + window.scrollY;
-      let mainAbsPosition = this.main.getBoundingClientRect().bottom + window.scrollY - 48;
+      let mainAbsPosition = this.main.getBoundingClientRect().bottom + window.scrollY;
+      let breakPoint = window.innerHeight - this.footer.getBoundingClientRect().height;
+      let mainBottomPosition = this.body.getBoundingClientRect().bottom - 60;
       if (adAbsPosition >= (mainAbsPosition)) {
         this.avoid();
-        
       }
-      if (window.scrollY * 2 <= mainAbsPosition + 160) {
+      if (mainBottomPosition > breakPoint) {
         this.returnBack();
       }
     })      
